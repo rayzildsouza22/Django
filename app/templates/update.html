@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="{% static 'app/styles.css' %}">
+</head>
+    
+<body>
+    
+    
+    
+    <div>
+        
+        <form class="form" method="POST">
+            <h3 align="center">USER DETAILS</h3>
+            {% csrf_token %}
+            <input type="email" name="email" value="{{hell.email}}" required><br><br>
+            <input type="text" name="name" value="{{hell.name}}" required><br><br>
+            <input type="number" name="age" value="{{hell.age}}" required><br><br>
+            <input type="text" name="address" value="{{hell.address}}" required><br><br>
+            <button>Submit</button>
+        </form>
+    </div>
+    
+    
+</body>
+</html>

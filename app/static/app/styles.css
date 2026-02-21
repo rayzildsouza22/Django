@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white; 
+    background-image: url("/static/app/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+   
+}
+
+.form {
+    background: rgb(240, 96, 96);
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    margin: 60px auto;   
+}
+
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input {
+    padding: 8px;
+    width: 250px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #f59999;
+}
+
+button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 6px;
+    background-color: #ee5151;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f33760;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #f8edede7;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #f06565;
+    color: rgb(233, 33, 33);
+}
+
+.tablecontainer {
+    width: 75%;
+    margin: 40px auto;
+    background-color: rgba(255,255,255,0.9);
+    padding: 25px;
+    border-radius: 10px;
+}
+.btn-a{
+    background-color: #ee4a6d;
+    padding: 8px 15px;
+    border-radius: 15px;
+    border:none;
+    color:rgb(231, 220, 233);
+
+}
+
+.btn-a:hover{
+    background-color: rgb(233, 34, 94);
+}
+
+.btn-b{
+    background-color: #e90637;
+    padding: 8px 15px;
+    border-radius: 15px;
+    border:none;
+    color:rgb(169, 178, 185);
+
+}
+.btn-b:hover{
+    background-color: rgb(122, 4, 39);
+}
+
+.s-box{
+    padding: 8px 15px;
+    border: none;
+    border-radius: 6px;
+    background-color: #c71e1e;
+    color: white;
+    cursor: pointer;
+}
+
+.s-box:hover{
+    background-color: #9a0819;
+}
+
+a.reg-btn {
+    background-color: #b10127; 
+    border: none;  
+    padding: 8px 15px;
+    border-radius: 6px;
+    color: rgb(209, 188, 226);
+    cursor:pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a.reg-btn:hover {
+    background-color: rgba(83, 2, 2, 0.877);
+}
+
+.msg {
+    width: 320px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.messages {
+    list-style: none;
+    padding: 0;
+}
+
+.messages li {
+    background-color: #6e0303;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+

@@ -1,0 +1,81 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count</title>
+    <link rel="stylesheet" href="{% static 'app/styles.css' %}">
+</head>
+<style>
+    .box{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: crimson;
+        text-align: center;
+        width: 600px;
+        margin: auto 100px;
+        border-radius: 50px;
+        padding:25px;
+        color:black;
+    }
+
+    .btn{
+        padding: 15px 40px;
+        margin:15px;
+        border-radius: 25px;
+        border:none;
+        cursor:pointer;
+    }
+    .add{
+        background-color: rgb(155, 26, 3);
+    }
+    
+    .les{
+        background-color: brown;
+    }
+ 
+</style>
+<body>
+    <div class="box">
+        <h1 class="display" id="disp">0</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint unde, perspiciatis nobis nam voluptatem deserunt voluptate tempora eius quae aliquam optio et ab, aspernatur eveniet ad non molestias inventore rem delectus. Voluptate nisi sunt minima modi expedita provident omnis ratione, odit eveniet perspiciatis cumque nobis corporis facilis libero qui nesciunt, beatae, veritatis ipsum doloremque. Aspernatur sed dolor eaque, maiores numquam nobis id eos culpa dolores veritatis, alias tenetur animi nisi corporis facere suscipit quae placeat nulla ea! Ipsa a dolore, velit esse itaque, qui, omnis suscipit maxime aut eligendi repudiandae illo! Omnis doloribus, rem itaque quam blanditiis porro explicabo quidem?</p>
+        <button id ="add" class="add btn">Add</button>
+        <button id ="sub" class="les btn">Sub</button>
+    </div>
+
+    
+    
+</body>
+<script>
+    let count=0;
+    const d=document.getElementById("disp");
+    document.getElementById("add").addEventListener(
+        "click",function(){
+            count++;
+            d.innerText=count;
+            /*d.style.transform="scale(2)"*/
+            setTimeout(
+                function(){d.style.transform= "scale(2)";},300
+            )
+            setTimeout(
+            function(){d.style.transform="scale(1)";},600
+            )
+        }
+    )
+     document.getElementById("sub").addEventListener(
+        "click",function(){
+            count--;
+            d.innerText=count;
+           /* d.style.transform="scale(0.5)"*/
+           setTimeout(
+                function(){d.style.transform= "scale(0.5)";},300
+            )
+            setTimeout(
+            function(){d.style.transform="scale(1)";},600
+            )
+
+        }
+    )
+
+</script>
+</html>
